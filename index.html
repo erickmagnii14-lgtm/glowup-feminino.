@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Glow Up Feminino 21D — Transforme sua aparência e autoestima</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --black:     #09070C;
+    --dark:      #100D16;
+    --mid:       #181320;
+    --panel:     #1F182B;
+    --panel2:    #261D34;
+    --rose:      #C4778A;
+    --rose-lt:   #E0A8B8;
+    --gold:      #C9A84C;
+    --gold-lt:   #E8C97A;
+    --cream:     #F5EFE6;
+    --muted:     #9A8FA8;
+    --white:     #FFFFFF;
+    --accent:    #7B4F6E;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--cream);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ── NOISE OVERLAY ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.5;
+  }
+
+  /* ── ORB DECORATIVOS ── */
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── TIPOGRAFIA ── */
+  .display {
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.1;
+  }
+
+  .gold-text  { color: var(--gold); }
+  .rose-text  { color: var(--rose-lt); }
+  .muted-text { color: var(--muted); }
+
+  .eyebrow {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  /* ── SEÇÕES ── */
+  section { position: relative; z-index: 1; }
+
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* ══════════════════════ HERO ══════════════════════ */
+  #hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 24px;
+    overflow: hidden;
+    background: radial-gradient(ellipse 70% 60% at 50% 30%, #2a1535 0%, var(--black) 70%);
+  }
+
+  #hero .orb1 { width: 500px; height: 500px; background: var(--accent); opacity: 0.18; top: -100px; left: -150px; }
+  #hero .orb2 { width: 400px; height: 400px; background: var(--rose); opacity: 0.12; bottom: -80px; right: -100px; }
+  #hero .orb3 { width: 200px; height: 200px; background: var(--gold); opacity: 0.08; top: 40%; left: 60%; }
+
+  .hero-inner { position: relative; z-index: 2; }
+
+  .hero-rule {
+    width: 60px; height: 1px;
+    background: var(--gold);
+    margin: 0 auto 28px;
+    opacity: 0.7;
+  }
+
+  .hero-tag {
+    display: inline-block;
+    border: 1px solid rgba(201,168,76,0.35);
+    padding: 6px 20px;
+    border-radius: 100px;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold-lt);
+    margin-bottom: 32px;
+    background: rgba(201,168,76,0.06);
+  }
+
+  .hero-title {
+    font-size: clamp(2.8rem, 6vw, 5.2rem);
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 12px;
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: var(--rose-lt);
+  }
+
+  .hero-sub {
+    font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+    font-weight: 300;
+    color: var(--gold-lt);
+    margin-bottom: 28px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+    color: var(--muted);
+    max-width: 560px;
+    margin: 0 auto 48px;
+    line-height: 1.8;
+  }
+
+  .hero-cta {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--gold) 0%, #a8872a 100%);
+    color: #0a070c;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 18px 52px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 8px 32px rgba(201,168,76,0.3);
+  }
+  .hero-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(201,168,76,0.45);
+  }
+
+  .hero-price-note {
+    margin-top: 18px;
+    font-size: 0.8rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+  }
+  .hero-price-note span {
+    color: var(--rose-lt);
+    font-weight: 500;
+  }
+
+  /* ══════════════════════ DOR ══════════════════════ */
+  #dor {
+    padding: 100px 0;
+    background: var(--dark);
+  }
+
+  .dor-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 48px;
+  }
+
+  .dor-card {
+    background: var(--panel);
+    border: 1px solid rgba(196,119,138,0.15);
+    border-radius: 8px;
+    padding: 28px 28px 28px 20px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    transition: border-color 0.3s;
+  }
+  .dor-card:hover { border-color: rgba(196,119,138,0.4); }
+
+  .dor-icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .dor-card p {
+    font-size: 0.95rem;
+    color: var(--cream);
+    line-height: 1.65;
+  }
+
+  .dor-bottom {
+    margin-top: 48px;
+    text-align: center;
+    padding: 36px 40px;
+    background: linear-gradient(135deg, rgba(196,119,138,0.08) 0%, rgba(123,79,110,0.12) 100%);
+    border: 1px solid rgba(196,119,138,0.2);
+    border-radius: 12px;
+  }
+
+  .dor-bottom p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.2rem, 2vw, 1.55rem);
+    font-style: italic;
+    color: var(--rose-lt);
+    line-height: 1.6;
+  }
+
+  .dor-bottom strong {
+    color: var(--white);
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  /* ══════════════════════ PROMESSA ══════════════════════ */
+  #promessa {
+    padding: 100px 0;
+    text-align: center;
+    background: radial-gradient(ellipse 80% 50% at 50% 50%, #1e1228 0%, var(--black) 75%);
+  }
+
+  .promessa-title {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    color: var(--white);
+    margin: 20px 0 16px;
+  }
+
+  .promessa-desc {
+    font-size: 1.05rem;
+    color: var(--muted);
+    max-width: 580px;
+    margin: 0 auto 64px;
+  }
+
+  /* ── Pilares ── */
+  .pilares {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: left;
+  }
+
+  .pilar {
+    background: var(--panel);
+    border: 1px solid rgba(201,168,76,0.12);
+    border-radius: 10px;
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  .pilar:hover {
+    transform: translateY(-4px);
+    border-color: rgba(201,168,76,0.3);
+  }
+
+  .pilar::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px; height: 100%;
+    background: linear-gradient(to bottom, var(--gold), var(--rose));
+  }
+
+  .pilar-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgba(201,168,76,0.12);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .pilar-title {
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .pilar p {
+    font-size: 0.92rem;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  /* ══════════════════════ PARA QUEM ══════════════════════ */
+  #para-quem {
+    padding: 100px 0;
+    background: var(--dark);
+  }
+
+  .para-quem-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    margin-top: 56px;
+    align-items: start;
+  }
+
+  .check-list { list-style: none; }
+  .check-list li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    font-size: 0.95rem;
+    color: var(--cream);
+    line-height: 1.6;
+  }
+  .check-list li:last-child { border-bottom: none; }
+
+  .check-icon { color: var(--gold); font-size: 1rem; flex-shrink: 0; margin-top: 3px; }
+
+  .quote-box {
+    background: linear-gradient(135deg, var(--panel2) 0%, var(--panel) 100%);
+    border: 1px solid rgba(196,119,138,0.25);
+    border-radius: 12px;
+    padding: 40px 36px;
+    position: relative;
+  }
+
+  .quote-mark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 6rem;
+    color: var(--rose);
+    opacity: 0.25;
+    line-height: 0.7;
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  .quote-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+    font-style: italic;
+    color: var(--cream);
+    line-height: 1.65;
+    margin-bottom: 24px;
+  }
+
+  .quote-author {
+    font-size: 0.78rem;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* ══════════════════════ PROTOCOLO ══════════════════════ */
+  #protocolo {
+    padding: 100px 0;
+    background: var(--black);
+  }
+
+  .timeline {
+    margin-top: 56px;
+    position: relative;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 38px;
+    top: 0; bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--rose), var(--gold), var(--rose));
+    opacity: 0.3;
+  }
+
+  .timeline-item {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 32px;
+    align-items: flex-start;
+  }
+
+  .timeline-dot {
+    width: 76px;
+    height: 76px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--panel);
+    border: 1px solid rgba(201,168,76,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .timeline-dot .days-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .timeline-dot .days-label {
+    font-size: 0.58rem;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .timeline-content {
+    background: var(--panel);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+    padding: 24px 28px;
+    flex: 1;
+    transition: border-color 0.3s;
+  }
+  .timeline-content:hover { border-color: rgba(201,168,76,0.2); }
+
+  .timeline-content h3 {
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 8px;
+    letter-spacing: 0.04em;
+  }
+
+  .timeline-content p {
+    font-size: 0.92rem;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+
+  /* ══════════════════════ O QUE INCLUI ══════════════════════ */
+  #inclui {
+    padding: 100px 0;
+    background: var(--dark);
+    text-align: center;
+  }
+
+  .inclui-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 52px;
+    text-align: left;
+  }
+
+  .inclui-card {
+    background: var(--panel2);
+    border: 1px solid rgba(196,119,138,0.12);
+    border-radius: 10px;
+    padding: 30px 24px;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  .inclui-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(196,119,138,0.3);
+  }
+
+  .inclui-emoji {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  .inclui-card h3 {
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .inclui-card p {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+
+  /* ══════════════════════ DEPOIMENTOS ══════════════════════ */
+  #depoimentos {
+    padding: 100px 0;
+    background: radial-gradient(ellipse 70% 50% at 50% 50%, #1c1025 0%, var(--black) 70%);
+  }
+
+  .depo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 52px;
+  }
+
+  .depo-card {
+    background: var(--panel);
+    border: 1px solid rgba(201,168,76,0.1);
+    border-radius: 10px;
+    padding: 28px;
+  }
+
+  .depo-stars {
+    color: var(--gold);
+    font-size: 0.8rem;
+    margin-bottom: 14px;
+    letter-spacing: 2px;
+  }
+
+  .depo-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--cream);
+    line-height: 1.65;
+    margin-bottom: 20px;
+  }
+
+  .depo-author {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--rose-lt);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .depo-age {
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  /* ══════════════════════ BONUS ══════════════════════ */
+  #bonus {
+    padding: 80px 0;
+    background: var(--dark);
+  }
+
+  .bonus-box {
+    background: linear-gradient(135deg, rgba(201,168,76,0.06) 0%, rgba(196,119,138,0.06) 100%);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-radius: 16px;
+    padding: 52px 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .bonus-title {
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    color: var(--white);
+    margin: 16px 0 12px;
+  }
+
+  .bonus-desc {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.75;
+  }
+
+  .bonus-list { list-style: none; }
+  .bonus-list li {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    font-size: 0.93rem;
+    color: var(--cream);
+  }
+  .bonus-list li:last-child { border-bottom: none; }
+  .bonus-list li span:first-child { color: var(--gold); font-size: 1rem; }
+
+  /* ══════════════════════ PREÇO ══════════════════════ */
+  #preco {
+    padding: 100px 0;
+    text-align: center;
+    background: var(--black);
+  }
+
+  .price-card {
+    max-width: 520px;
+    margin: 48px auto 0;
+    background: var(--panel);
+    border: 1px solid rgba(201,168,76,0.25);
+    border-radius: 16px;
+    padding: 52px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .price-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--rose), var(--gold), var(--rose));
+  }
+
+  .price-badge {
+    display: inline-block;
+    background: rgba(196,119,138,0.15);
+    border: 1px solid rgba(196,119,138,0.3);
+    color: var(--rose-lt);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 100px;
+    margin-bottom: 28px;
+  }
+
+  .price-old {
+    font-size: 1rem;
+    color: var(--muted);
+    text-decoration: line-through;
+    margin-bottom: 8px;
+  }
+
+  .price-main {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: var(--gold-lt);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .price-main sup {
+    font-size: 1.8rem;
+    vertical-align: super;
+    margin-right: 4px;
+    color: var(--gold);
+  }
+
+  .price-note {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-bottom: 36px;
+  }
+
+  .price-includes {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 36px;
+  }
+  .price-includes li {
+    display: flex;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    color: var(--cream);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  .price-includes li:last-child { border-bottom: none; }
+  .price-includes li span:first-child { color: var(--gold); }
+
+  .btn-comprar {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, var(--gold) 0%, #a8872a 100%);
+    color: #0a070c;
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 8px 32px rgba(201,168,76,0.3);
+  }
+  .btn-comprar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 48px rgba(201,168,76,0.45);
+  }
+
+  .guarantee {
+    margin-top: 20px;
+    font-size: 0.78rem;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  /* ══════════════════════ FINAL ══════════════════════ */
+  #final {
+    padding: 100px 0;
+    text-align: center;
+    background: radial-gradient(ellipse 80% 60% at 50% 50%, #21152c 0%, var(--black) 70%);
+  }
+
+  .final-title {
+    font-size: clamp(2.2rem, 4vw, 3.8rem);
+    color: var(--white);
+    margin: 20px 0 16px;
+  }
+
+  .final-desc {
+    font-size: 1.05rem;
+    color: var(--muted);
+    max-width: 520px;
+    margin: 0 auto 48px;
+    line-height: 1.8;
+  }
+
+  /* ══════════════════════ FOOTER ══════════════════════ */
+  footer {
+    padding: 40px 24px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    background: var(--black);
+  }
+  footer p {
+    font-size: 0.78rem;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+  }
+
+  /* ══════════════════════ DIVIDER ══════════════════════ */
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 0 16px;
+  }
+  .divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent);
+  }
+  .divider span {
+    font-size: 0.65rem;
+    color: var(--gold);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+  }
+
+  /* ══════════════════════ SECTION HEADER ══════════════════════ */
+  .section-header {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-size: clamp(1.9rem, 3.5vw, 3rem);
+    color: var(--white);
+    margin: 14px 0 12px;
+  }
+
+  .section-sub {
+    font-size: 0.95rem;
+    color: var(--muted);
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.75;
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-inner > * {
+    animation: fadeUp 0.8s ease both;
+  }
+  .hero-inner > *:nth-child(1) { animation-delay: 0.1s; }
+  .hero-inner > *:nth-child(2) { animation-delay: 0.2s; }
+  .hero-inner > *:nth-child(3) { animation-delay: 0.3s; }
+  .hero-inner > *:nth-child(4) { animation-delay: 0.4s; }
+  .hero-inner > *:nth-child(5) { animation-delay: 0.5s; }
+  .hero-inner > *:nth-child(6) { animation-delay: 0.6s; }
+  .hero-inner > *:nth-child(7) { animation-delay: 0.7s; }
+
+  /* ── MOBILE ── */
+  @media (max-width: 680px) {
+    .dor-grid, .pilares, .para-quem-grid,
+    .inclui-grid, .depo-grid { grid-template-columns: 1fr; }
+    .bonus-box { grid-template-columns: 1fr; gap: 28px; }
+    .price-card { padding: 36px 28px; }
+    .timeline::before { left: 36px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════ BANNER PERSONALIZADO ══════════ -->
+<div id="banner-personalizado" style="display:none; position:relative; z-index:50; background:linear-gradient(135deg,rgba(196,119,138,0.12),rgba(123,79,110,0.16)); border-bottom:1px solid rgba(201,168,76,0.2); padding:20px 24px; text-align:center;">
+  <p style="font-size:0.65rem;font-family:'Jost',sans-serif;font-weight:600;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:8px">✦ Análise concluída ✦</p>
+  <p id="banner-texto" style="font-family:'Cormorant Garamond',serif;font-size:clamp(1rem,2.5vw,1.35rem);color:var(--cream);font-style:italic;line-height:1.6;max-width:680px;margin:0 auto"></p>
+</div>
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero">
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+
+  <div class="hero-inner">
+    <div class="hero-rule"></div>
+    <div class="hero-tag" id="hero-tag">✦ Programa Exclusivo Edição Premium ✦</div>
+
+    <h1 class="hero-title display" id="hero-title">
+      Você tem mais de 40 anos<br>
+      e merece se sentir<br>
+      <em>linda de verdade.</em>
+    </h1>
+
+    <p class="hero-sub">Transforme sua aparência e autoestima em 21 dias</p>
+
+    <p class="hero-desc" id="hero-desc">
+      Não é sobre esconder a idade. É sobre descobrir a versão mais confiante, radiante e presente de você mesma — a mulher que você sempre soube que poderia ser.
+    </p>
+
+    <a href="https://pay.kiwify.com.br/3kihNDx" target="_blank" class="hero-cta">Quero começar minha transformação</a>
+
+    <p class="hero-price-note">Acesso imediato por apenas <span>R$27,90</span></p>
+  </div>
+</section>
+
+<!-- ══════════ DOR ══════════ -->
+<section id="dor">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">Você se reconhece aqui?</p>
+      <h2 class="section-title display">Você já sentiu alguma dessas coisas?</h2>
+      <p class="section-sub">Se você respondeu sim para pelo menos uma, este programa foi criado especialmente para você.</p>
+    </div>
+
+    <div class="dor-grid">
+      <div class="dor-card">
+        <span class="dor-icon">🪞</span>
+        <p>Se olha no espelho e sente que algo mudou — mas não sabe exatamente como recuperar aquela confiança que você tinha antes.</p>
+      </div>
+      <div class="dor-card">
+        <span class="dor-icon">😔</span>
+        <p>Passou anos cuidando de todo mundo — filhos, marido, trabalho — e em algum momento deixou de cuidar de você mesma.</p>
+      </div>
+      <div class="dor-card">
+        <span class="dor-icon">📱</span>
+        <p>Vê mulheres da sua idade radiantes nas redes sociais e pensa: "como ela faz isso?" — sentindo que você ficou para trás.</p>
+      </div>
+      <div class="dor-card">
+        <span class="dor-icon">💭</span>
+        <p>Já tentou várias coisas, mas sem direção, sem método — e desistiu por não ver resultado ou não saber por onde começar.</p>
+      </div>
+      <div class="dor-card">
+        <span class="dor-icon">✨</span>
+        <p>Sente que ainda tem muito brilho dentro de você — e quer liberar isso, mas não quer gastar uma fortuna em procedimentos.</p>
+      </div>
+      <div class="dor-card">
+        <span class="dor-icon">💪</span>
+        <p>Sabe que ainda tem muito pela frente — e quer viver essa fase da vida com elegância, presença e amor-próprio de verdade.</p>
+      </div>
+    </div>
+
+    <div class="dor-bottom">
+      <p>
+        O problema nunca foi você. Foi a falta de um método pensado <strong>para uma mulher como você</strong> — madura, inteligente, que já viveu muito e merece agora viver para si mesma.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROMESSA ══════════ -->
+<section id="promessa">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">O Método</p>
+      <h2 class="section-title display">Os 4 Pilares da sua <span class="gold-text">transformação</span></h2>
+      <p class="section-sub">Um método completo que trabalha sua beleza, sua mente e sua presença — de dentro para fora.</p>
+    </div>
+
+    <div class="pilares">
+      <div class="pilar">
+        <div class="pilar-num">01</div>
+        <div class="pilar-title">Reset Mental</div>
+        <p>Chega de se comparar e de se diminuir. Você vai reprogramar sua autoimagem com exercícios simples que desfazem anos de autocrítica e devolvem a você o olhar de admiração que merece sentir por si mesma.</p>
+      </div>
+      <div class="pilar">
+        <div class="pilar-num">02</div>
+        <div class="pilar-title">Glow Up Físico</div>
+        <p>Rituais de beleza acessíveis e eficazes para pele, cabelo e postura. Aprenda os cuidados que realmente fazem diferença depois dos 40 — sem gastar fortuna, sem precisar de salão todo dia.</p>
+      </div>
+      <div class="pilar">
+        <div class="pilar-num">03</div>
+        <div class="pilar-title">Presença e Energia</div>
+        <p>A mulher mais bonita do ambiente não é sempre a mais jovem — é a que sabe ocupar o espaço. Aprenda a se comunicar, se mover e se apresentar de um jeito que todos percebem quando você entra.</p>
+      </div>
+      <div class="pilar">
+        <div class="pilar-num">04</div>
+        <div class="pilar-title">Consistência</div>
+        <p>O segredo não é perfeição — é repetição. Você vai criar hábitos reais, simples de manter, que transformam não apenas sua aparência, mas a forma como você se sente acordando toda manhã.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PARA QUEM ══════════ -->
+<section id="para-quem">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">Para quem é</p>
+      <h2 class="section-title display">Este programa foi criado<br><span class="rose-text">para você, especificamente</span></h2>
+    </div>
+
+    <div class="para-quem-grid">
+      <ul class="check-list">
+        <li><span class="check-icon">✦</span><span>Você tem 40 anos ou mais e quer se sentir bonita, confiante e vibrante nessa fase da vida</span></li>
+        <li><span class="check-icon">✦</span><span>Você quer resultados reais sem depender de procedimentos caros ou rotinas impossíveis</span></li>
+        <li><span class="check-icon">✦</span><span>Você está pronta para colocar você mesma em primeiro lugar, talvez pela primeira vez</span></li>
+        <li><span class="check-icon">✦</span><span>Você quer uma rotina de beleza e autoestima que caiba na sua vida real — sem complicação</span></li>
+        <li><span class="check-icon">✦</span><span>Você acredita que os melhores anos ainda estão por vir — e quer se preparar para vivê-los plenamente</span></li>
+        <li><span class="check-icon">✦</span><span>Você quer se olhar no espelho e sentir orgulho, admiração e carinho pela mulher que se tornou</span></li>
+      </ul>
+
+      <div class="quote-box">
+        <span class="quote-mark">"</span>
+        <p class="quote-text">Depois dos 40, a beleza não diminui — ela se aprofunda. O que muda é que agora você tem a sabedoria para deixá-la aparecer de verdade.</p>
+        <p class="quote-author">✦ Glow Up Feminino 21D</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROTOCOLO ══════════ -->
+<section id="protocolo">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">O Protocolo</p>
+      <h2 class="section-title display">21 dias que vão <span class="gold-text">mudar tudo</span></h2>
+      <p class="section-sub">Cada fase foi pensada para construir sobre a anterior — sem pressa, sem pressão, com intenção.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot">
+          <span class="days-num">1–3</span>
+          <span class="days-label">dias</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Cuidados Básicos & Reset Mental</h3>
+          <p>Você começa pela base: skincare simples, hidratação e o poderoso diário de qualidades. Nos primeiros 3 dias você já vai notar uma diferença — não só no espelho, mas na forma como você se sente ao acordar.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">
+          <span class="days-num">4–7</span>
+          <span class="days-label">dias</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Postura, Presença e Consciência Corporal</h3>
+          <p>A semana em que você aprende a ocupar o espaço. Postura, forma de caminhar, de falar, de olhar nos olhos — pequenas mudanças que transformam completamente a impressão que você causa em qualquer ambiente.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">
+          <span class="days-num">8–14</span>
+          <span class="days-label">dias</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Repetição Intencional — a Ação Vira Identidade</h3>
+          <p>Aqui acontece a mágica. Os hábitos que você praticou na primeira semana começam a se tornar parte de quem você é. Você para de "tentar" e começa simplesmente a ser a mulher confiante que estava dentro de você.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">
+          <span class="days-num">15–21</span>
+          <span class="days-label">dias</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Consolidação — Celebre Quem Você Se Tornou</h3>
+          <p>Os hábitos agora fazem parte de você. Não é mais esforço — é a sua nova realidade. Você olha para trás e percebe o quanto mudou em apenas 21 dias. Esse é só o começo de tudo o que vem pela frente.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ O QUE INCLUI ══════════ -->
+<section id="inclui">
+  <div class="container">
+    <p class="eyebrow">O que você recebe</p>
+    <h2 class="section-title display">Tudo que você precisa,<br><span class="rose-text">em um só lugar</span></h2>
+
+    <div class="inclui-grid">
+      <div class="inclui-card">
+        <span class="inclui-emoji">📖</span>
+        <h3>Guia Completo em PDF</h3>
+        <p>O método Glow Up 21D completo, organizado por fases e dias. Claro, direto e fácil de seguir — mesmo na correria do dia a dia.</p>
+      </div>
+      <div class="inclui-card">
+        <span class="inclui-emoji">🎯</span>
+        <h3>Slides Premium</h3>
+        <p>Conteúdo visual elegante com resumos de cada fase, afirmações poderosas e exercícios práticos para aplicar imediatamente.</p>
+      </div>
+      <div class="inclui-card">
+        <span class="inclui-emoji">✅</span>
+        <h3>Checklist Diário</h3>
+        <p>Seu ritual de autocuidado organizado dia a dia. Marque cada item e sinta a satisfação de estar colocando você em primeiro lugar.</p>
+      </div>
+      <div class="inclui-card">
+        <span class="inclui-emoji">💎</span>
+        <h3>Bônus: Segredos de Presença</h3>
+        <p>Os detalhes que ninguém conta: perfume como assinatura, linguagem corporal, como falar com calma e criar uma impressão inesquecível.</p>
+      </div>
+      <div class="inclui-card">
+        <span class="inclui-emoji">📱</span>
+        <h3>Acesso na Área de Membros</h3>
+        <p>Tudo organizado e disponível no celular ou computador. Acesse quando quiser, quantas vezes precisar, sem limite de prazo.</p>
+      </div>
+      <div class="inclui-card">
+        <span class="inclui-emoji">🔑</span>
+        <h3>Acesso Imediato</h3>
+        <p>Assim que o pagamento for confirmado, você já acessa tudo. Sem espera, sem complicação. Começa hoje, se quiser.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ DEPOIMENTOS ══════════ -->
+<section id="depoimentos">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">Resultados reais</p>
+      <h2 class="section-title display">Mulheres que <span class="gold-text">já transformaram</span></h2>
+    </div>
+
+    <div class="depo-grid">
+      <div class="depo-card">
+        <div class="depo-stars">★★★★★</div>
+        <p class="depo-text">"Achei que era tarde demais para mudar. Depois de 21 dias me sinto outra pessoa — mais leve, mais bonita, mais eu mesma. Deveria ter feito isso há anos."</p>
+        <p class="depo-author">Márcia R.</p>
+        <p class="depo-age">44 anos, mãe de dois filhos</p>
+      </div>
+      <div class="depo-card">
+        <div class="depo-stars">★★★★★</div>
+        <p class="depo-text">"O que mais me surpreendeu foi perceber que não precisava de muito. Pequenas mudanças, todos os dias. Meu marido me perguntou o que eu estava fazendo de diferente."</p>
+        <p class="depo-author">Cláudia M.</p>
+        <p class="depo-age">41 anos, professora</p>
+      </div>
+      <div class="depo-card">
+        <div class="depo-stars">★★★★★</div>
+        <p class="depo-text">"Chorei no dia 7. De alegria. Me olhei no espelho e gostei do que vi pela primeira vez em muito tempo. Vale cada centavo — e muito mais."</p>
+        <p class="depo-author">Fernanda L.</p>
+        <p class="depo-age">47 anos, empresária</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ BÔNUS ══════════ -->
+<section id="bonus">
+  <div class="container">
+    <div class="bonus-box">
+      <div>
+        <p class="eyebrow">Bônus Exclusivo</p>
+        <h2 class="bonus-title display">Os segredos que fazem a <span class="gold-text">diferença</span></h2>
+        <p class="bonus-desc">Incluídos gratuitamente com o seu acesso — porque os detalhes certos elevam tudo.</p>
+      </div>
+      <ul class="bonus-list">
+        <li><span>✦</span><span><strong>Presença ao entrar em um ambiente</strong> — como fazer todos notarem quando você chega</span></li>
+        <li><span>✦</span><span><strong>A arte de falar com calma</strong> — por que mulheres que falam devagar são percebidas como mais inteligentes e seguras</span></li>
+        <li><span>✦</span><span><strong>Perfume como assinatura pessoal</strong> — como ser lembrada por onde você passa</span></li>
+        <li><span>✦</span><span><strong>O poder do sorriso intencional</strong> — o acessório mais poderoso que você pode usar, e é de graça</span></li>
+        <li><span>✦</span><span><strong>Detalhes que valorizam</strong> — unhas, sobrancelha, roupas — o que realmente importa depois dos 40</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PREÇO ══════════ -->
+<section id="preco">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">Investimento</p>
+      <h2 class="section-title display">Tudo isso por um valor<br><span class="rose-text">que respeita você</span></h2>
+      <p class="section-sub">Porque transformação de verdade não precisa custar uma fortuna.</p>
+    </div>
+
+    <div class="price-card">
+      <div class="price-badge">✦ Acesso completo imediato ✦</div>
+      <p class="price-old">De R$47,00</p>
+      <div class="price-main"><sup>R$</sup>27<span style="font-size:2rem">,90</span></div>
+      <p class="price-note">pagamento único · acesso imediato · sem mensalidade</p>
+
+      <ul class="price-includes">
+        <li><span>✦</span><span>Guia completo PDF — Método Glow Up 21D</span></li>
+        <li><span>✦</span><span>Slides premium com afirmações e exercícios</span></li>
+        <li><span>✦</span><span>Checklist diário dos 21 dias</span></li>
+        <li><span>✦</span><span>Bônus: Segredos de Presença e Elegância</span></li>
+        <li><span>✦</span><span>Acesso na área de membros — celular e PC</span></li>
+      </ul>
+
+      <a href="https://pay.kiwify.com.br/3kihNDx" target="_blank" class="btn-comprar">Quero começar minha transformação agora →</a>
+
+      <p class="guarantee">🔒 Pagamento 100% seguro · Acesso imediato após confirmação</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FINAL ══════════ -->
+<section id="final">
+  <div class="container">
+    <p class="eyebrow">Uma última coisa</p>
+    <h2 class="final-title display">
+      Você não precisa<br>
+      ser <em style="color:var(--rose-lt)">perfeita.</em><br>
+      <span class="gold-text">Apenas comece.</span>
+    </h2>
+    <p class="final-desc">
+      Cada dia que você cuida de si mesma é uma declaração de que você vale. Esta jornada de 21 dias é só o começo de tudo o que você pode se tornar — e você merece descobrir isso.
+    </p>
+    <a href="https://pay.kiwify.com.br/3kihNDx" target="_blank" class="hero-cta">Sim, eu mereço isso →</a>
+  </div>
+</section>
+
+<footer>
+  <p>✦ Glow Up Feminino 21D · Todos os direitos reservados ✦</p>
+</footer>
+
+<script>
+// ── Personalização via URL params do quiz ──────────────────
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  const nome   = params.get('nome');
+  const perfil = params.get('perfil') || '';
+
+  if (!nome) return; // acesso direto sem quiz — página normal
+
+  // Mostra o banner
+  document.getElementById('banner-personalizado').style.display = 'block';
+
+  // Monta a mensagem personalizada
+  let msg = '';
+  if (perfil.toLowerCase().includes('autoestima') || perfil.toLowerCase().includes('me vejo')) {
+    msg = `${nome}, com base na sua análise identificamos que o seu maior bloqueio está na relação que você tem com você mesma. O Glow Up Feminino 21D foi desenvolvido exatamente para o seu perfil — para transformar primeiro o olhar interno, e deixar a beleza exterior florescer de verdade.`;
+  } else if (perfil.toLowerCase().includes('aparência') || perfil.toLowerCase().includes('pele')) {
+    msg = `${nome}, sua análise mostrou que você precisa de uma rotina de beleza estruturada e simples que encaixe no seu dia a dia. O Glow Up Feminino 21D tem um protocolo de Glow Up físico criado especialmente para você — resultados visíveis sem complicação.`;
+  } else if (perfil.toLowerCase().includes('confiança') || perfil.toLowerCase().includes('impor')) {
+    msg = `${nome}, analisamos suas respostas e identificamos que você tem muito mais potencial de presença do que acredita. O Glow Up Feminino 21D vai ativar essa confiança — para que você entre em qualquer ambiente e seja notada do jeito que merece.`;
+  } else {
+    msg = `${nome}, sua análise revelou que você está pronta para uma transformação completa — de dentro para fora. O Glow Up Feminino 21D foi criado especialmente para mulheres com o seu perfil, e o método vai trabalhar cada ponto identificado na sua análise.`;
+  }
+
+  document.getElementById('banner-texto').textContent = msg;
+
+  // Personaliza o hero
+  document.getElementById('hero-tag').textContent = `✦ ${nome}, este programa foi criado para você ✦`;
+  document.getElementById('hero-title').innerHTML = `
+    ${nome}, você merece<br>se sentir <em>linda de verdade.</em>
+  `;
+  document.getElementById('hero-desc').textContent =
+    `Sua análise confirmou: você tem tudo o que precisa para se transformar. Agora só falta o método certo — e é exatamente isso que o Glow Up Feminino 21D entrega em 21 dias.`;
+})();
+</script>
+
+</body>
+</html>
